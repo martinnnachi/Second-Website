@@ -8,6 +8,19 @@ body {
     margin: 0;
 }
 
+label {
+    font-family: Montserrat, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+p {
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1;
+}
+
 .container {
     width: 100%;
     margin: auto;
@@ -76,6 +89,10 @@ body {
     width: 100%
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /****** Nav Bar ******/
 nav {
     width: 100%;
@@ -123,6 +140,38 @@ ul.topnav li.dropdownIcon {
     background: #076DFF -webkit-linear-gradient(#076DFF, #65a5ff);
 }
 
+div.box {
+    text-align: center;
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15),
+    0 2px 3px 0 rgba(0, 0, 0, .1);
+}
+
+button {
+    font-size: 32px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: #0069ff;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+button.learnMore {
+    display: block;
+    margin: auto;
+}
+
+div.icon {
+    width: 100%;
+}
+
 div.leftside-col {
     margin-right: 20%;
     margin-left: 5%;
@@ -138,6 +187,12 @@ h1.large {
     font-family: Montserrat, sans-serif;
     margin: 0;
     line-height: 70px;
+}
+
+.section2Header {
+    font-size: 55px;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
 }
 
 form h2 {
@@ -185,9 +240,19 @@ input[type="text"] {
         text-align: left;
     }
 
-    .col-6 {
+    h1.section2Header {
+        font-size: 50px;
+    }
+
+    .col-6,
+    .col-4 {
         width: 100%;
         margin: 0;
+    }
+
+    div.box {
+        padding: 5px;
+        display: block;
     }
 
     div.leftside-col,
