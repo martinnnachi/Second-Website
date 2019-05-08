@@ -21,6 +21,12 @@ p {
     line-height: 1;
 }
 
+article p {
+    font-size: 25px;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
 .container {
     width: 100%;
     margin: auto;
@@ -150,6 +156,12 @@ div.box {
     0 2px 3px 0 rgba(0, 0, 0, .1);
 }
 
+div.slopeIcon img {
+    display: block;
+    margin: auto;
+    box-shadow: -2px /*H*/ -2px /*V*/ 20px /*Blur*/ 2px /*Spread*/ rgba(0 /*Shadow*/, 0 /*BG*/, 0 /*Box Color*/, .15 /*Opacity*/), 2px 2px 17px 2px rgba(0, 0, 0, 1);
+}
+
 button {
     font-size: 32px;
     font-family: Montserrat, sans-serif;
@@ -206,7 +218,30 @@ input[type="text"] {
     min-width: 100px;
     padding: 5px;
     border-radius: 7px;
+}
 
+footer.foot {
+    background-color: #666;
+    padding-left: 10%;
+}
+
+footer.foot h1 {
+    color: white;
+    font-size: 25px;
+    font-family: Montserrat;
+}
+
+footer.foot ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+footer.foot ul li {
+    color: white;
+    font-size: 22px;
+    font-family: sans-serif;
+    line-height: 1.5;
 }
 
 /*######## Mobile ##########*/
@@ -244,15 +279,34 @@ input[type="text"] {
         font-size: 50px;
     }
 
+    article p {
+        font-size: 15px;
+    }
+
+    .col-7,
     .col-6,
+    .col-5,
     .col-4 {
         width: 100%;
         margin: 0;
     }
 
+    div.mobileStack {
+        width: 50%;
+        display: block;
+    }
+
     div.box {
         padding: 5px;
         display: block;
+    }
+
+    div.slopeIcon {
+        margin: 10px;
+    }
+
+    div.slopeIcon img {
+        width: 100%;
     }
 
     div.leftside-col,
